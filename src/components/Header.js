@@ -48,16 +48,16 @@ const Header = () => {
   }, [suggestionsRef]);
 
   const getSearchSuggestions = async () => {
-    const data = await fetch(`http://localhost:1999/api/data/${searchQuery}`);
-    const json = await data.json();
-    setSearchSuggestions(json[1]);
+    // const data = await fetch(`http://localhost:1999/api/data/${searchQuery}`);
+    // const json = await data.json();
+    // setSearchSuggestions(json[1]);
 
-    //update cache
-    dispatch(
-      cacheResults({
-        [searchQuery]: json[1],
-      })
-    );
+    // //update cache
+    // dispatch(
+    //   cacheResults({
+    //     [searchQuery]: json[1],
+    //   })
+    // );
   }
   return (
     <div className="grid grid-flow-col ">

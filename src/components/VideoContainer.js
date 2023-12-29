@@ -46,7 +46,7 @@ const VideoContainer = () => {
     <div className={'m-3 h-screen p-auto ' + (isMenuOpen ? 'grid grid-cols-3': ' grid grid-cols-4')}>
      {/* <AdVideoCard info={videos[0]}/> */}
      { videos.map((vid, index)=>(
-     <Link key={vid?.id+index} to={"/watch?v="+vid.id}>
+     <Link key={vid?.id+index} to={"/watch?v="+vid?.id}>
      <VideoCard  info={vid}/>
      </Link>))}
 

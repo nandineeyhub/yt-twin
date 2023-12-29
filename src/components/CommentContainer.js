@@ -3,11 +3,11 @@ import Comment from './Comment'
 
 const commentsData = [
     {
-        name: "Priya Jha",
+        name: "Nandini",
         text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
         replies: [
             {
-                name: "Nandini",
+                name: "Priya Jha",
                 text: "     Nisi modi dolor non dolorum eaque ratione earum dignissimos nam ea enim nemo, officiis consequatur ipsa illo veritatis accusamus deleniti autem rerum.",
                 replies: []
             },
