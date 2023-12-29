@@ -96,9 +96,9 @@ const Sidebar = () => {
               return <SideButton key={index} name={item.name} logo={item.logo} />;
             })}
           </div>
-          <div className="border-blue-200 border-2 py-4 mb-2">
+          {/* <div className="border-blue-200 border-2 py-4 mb-2">
             About Press Copyright Contact Us Creators
-          </div>
+          </div> */}
         </div>
   ):(
     (location.pathname==="/watch")?(null):(
