@@ -1,9 +1,9 @@
 import React from 'react'
 
 const VideoCard = ({info}) => {
-
-const {title, thumbnails, channelTitle}=info?.snippet;
-const {viewCount}= info?.statistics;
+// console.log(info)
+// const {title, thumbnails, channelTitle}=info?.snippet;
+// const {viewCount}= info?.statistics;
 const nFormatter=(num, digits) => {
     const lookup = [
       { value: 1, symbol: "" },
@@ -23,11 +23,11 @@ const nFormatter=(num, digits) => {
 // isMenuOpen? 'w-96 m-1': 'w-[20rem] m-1'
   return (
     <div className={'m-2'}>
-        <img className="rounded-xl w-full" alt="thumbnail" src={thumbnails?.medium.url}/>
-        <h1 className="font-medium my-2">{title}</h1>
+        <img className="rounded-xl w-full" alt="thumbnail" src={info?.snippet?.thumbnails?.medium.url}/>
+        <h1 className="font-medium my-2">{info?.snippet?.title}</h1>
         <div className="text-sm text-gray-600">
-        <h2 >{channelTitle}</h2>
-        <h3 className=''>{nFormatter(viewCount, 1)}</h3>
+        <h2 >{info?.snippet?.channelTitle}</h2>
+        <h3 className=''>{nFormatter(info?.statistics?.viewCount, 1)}</h3>
         </div>
         
     </div>
